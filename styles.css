@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+:root {
+
+/* Colors */
+
+/* Primary */
+
+--clr-primary-blue: hsl(233, 26%, 24%);
+--clr-primary-lime: hsl(136, 65%, 51%);
+--clr-primary-cyan: hsl(192, 70%, 51%);
+
+/* Neutral */
+
+--clr-gray-blue-300: hsl(233, 8%, 62%);
+--clr-gray-blue-100: hsl(220, 16%, 96%);
+--clr-gray: hsl(0, 0%, 98%);
+--clr-white: hsl(0, 0%, 100%);
+
+}
+
+/* GENERAL STYLES */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Public Sans', sans-serif;
+  min-height: 100vh;
+}
+
+.btn {
+  all: unset;
+  display: block;
+  background: linear-gradient(120deg, hsl(136, 65%, 51%) 0%, hsl(192, 70%, 51%) 96%);
+  border-radius: 35px;
+  padding: .75rem 2rem;
+}
+
+/* HEADER */
+
+/* FOOTER */
+
+footer {
+  background: var(--clr-primary-blue);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 1rem;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-menu {
+  flex-direction: column;
+  font-weight: 300;
+}
