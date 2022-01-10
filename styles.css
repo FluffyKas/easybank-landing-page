@@ -39,12 +39,35 @@ body {
   display: block;
   background: linear-gradient(120deg, hsl(136, 65%, 51%) 0%, hsl(192, 70%, 51%) 96%);
   border-radius: 35px;
+  color: white;
+  font-weight: 400;
   padding: .75rem 2rem;
 }
 
 /* HEADER */
 
 /* HERO */
+
+.hero-body {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero-title {
+  color: var(--clr-primary-blue);
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.hero-text {
+  color: var(--clr-gray-blue-300);
+  line-height: 1.7;
+  font-size: .95rem;
+}
+
+.hero-btn {
+  margin: 1.5rem auto;
+}
 
 /* EASYBANK OPTIONS */
 
