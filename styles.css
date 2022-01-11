@@ -55,6 +55,12 @@ body {
 
 /* HERO */
 
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .hero-body {
   text-align: center;
   padding: 0 1rem;
@@ -81,7 +87,7 @@ body {
 .easybank-options {
   color: var(--clr-gray-blue-300);
   text-align: center;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 
 .easybank-options-title {
@@ -93,6 +99,10 @@ body {
 
 .easybank-options-text {
   padding-bottom: 1rem;
+}
+
+.option {
+  padding-bottom: 2rem;
 }
 
 .option img {
@@ -115,6 +125,9 @@ body {
 
 .articles {
   padding: 0 1.5rem;
+}
+
+.articles-wrapper {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -230,4 +243,26 @@ footer ul {
   font-size: .95rem;
   opacity: .8;
   padding-top: 1rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 50rem) {
+
+.easybank-options {
+  margin: 0 auto;
+  max-width: 90rem;
+  text-align: left;
+}
+
+.options-wrapper {
+  display: flex;
+  gap: 1.5rem;
+}
+
+
+.articles-wrapper {
+  flex-direction: row;
+}
+
 }
