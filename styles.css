@@ -249,6 +249,23 @@ footer ul {
 
 @media (min-width: 50rem) {
 
+.hero {
+  display: flex;
+  align-items: center;
+}
+
+.hero-body {
+  order: 1;
+  text-align: left;
+}
+
+.hero-img-holder {
+  background: url(images/bg-intro-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  order: 2;
+}
+
 .easybank-options {
   margin: 0 auto;
   max-width: 90rem;
