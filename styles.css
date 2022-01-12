@@ -59,14 +59,14 @@ header {
   background: var(--clr-white);
   box-shadow: 0 2px 15px 0px hsla(233, 8%, 62%, .25);
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: 1.3rem;
   position: fixed;
   width: 100vw;
 }
 
 .header-wrapper {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
@@ -82,6 +82,7 @@ header {
   flex-direction: column;
   gap: 2rem;
   font-size: .9rem;
+  list-style: none;
 }
 
 .header-menu li a {
@@ -148,6 +149,7 @@ header {
   color: var(--clr-gray-blue-300);
   line-height: 1.7;
   font-size: .95rem;
+  padding-top: 1.2rem;
 }
 
 .hero-btn {
@@ -159,7 +161,7 @@ header {
 .easybank-options {
   color: var(--clr-gray-blue-300);
   text-align: center;
-  padding: 0 1.5rem;
+  padding: 8.5rem 1.5rem 5rem 1.5rem;
 }
 
 .easybank-options-title {
@@ -170,7 +172,7 @@ header {
 }
 
 .easybank-options-text {
-  padding-bottom: 1rem;
+  padding-bottom: 3.5rem;
 }
 
 .option {
@@ -281,6 +283,10 @@ footer ul {
   padding: .5rem 0;
 }
 
+.social-media-links {
+  padding: 1.2rem 0;
+}
+
 .social-link i{
   color: var(--clr-white);
   font-size: 1.5rem;
@@ -296,7 +302,6 @@ footer ul {
 .footer-menu {
   flex-direction: column;
   font-weight: 300;
-  padding: 1.3rem 0;
 }
 
 .footer-menu li a,
@@ -310,11 +315,14 @@ footer ul {
   color: var(--clr-primary-lime);
 }
 
+.footer-btn {
+  margin: 1.5rem auto;
+}
+
 .copyright {
   color: var(--clr-gray-blue-300);
   font-size: .95rem;
   opacity: .8;
-  padding-top: 1rem;
 }
 
 /* MEDIA QUERIES */
@@ -414,6 +422,33 @@ footer ul {
 
 .articles-wrapper {
   flex-direction: row;
+}
+
+
+/* FOOTER */
+
+.footer-outer-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 76rem;
+  border: 2px solid red;
+}
+
+.footer-menu {
+  text-align: left;
+}
+
+.footer-btn {
+  margin: 0;
+}
+
+.footer-wrapper-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 }
