@@ -68,19 +68,37 @@ header {
   display: none;
 }
 
+.header-menu {
+  display: flex;
+  flex-direction; column;
+}
+
+.header-nav.active {
+  display: block;
+}
+
 .header-btn {
   display: none;
 }
 
 .hamburger-btn {
   all: unset;
+  cursor: pointer;
+}
+
+.hamburger-btn.opened {
+  display: none;
 }
 
 .close-btn {
   all: unset;
   display: none;
+  cursor: pointer;
 }
 
+.close-btn.active {
+  display: block;
+}
 
 /* HERO */
 
@@ -286,6 +304,26 @@ footer ul {
 /* MEDIA QUERIES */
 
 @media (min-width: 50rem) {
+
+/* HEADER */
+
+.hamburger-btn,
+.close-btn {
+  display: none;
+}
+
+.header-nav {
+  display: block;
+}
+
+.header-menu {
+  flex-direction: row;
+  list-style: none;
+}
+
+.header-btn {
+  display: block;
+}
 
 .hero {
   display: flex;
