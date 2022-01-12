@@ -403,7 +403,20 @@ footer ul {
   display: inline-block;
 }
 
+/* HERO */
+
 .hero {
+  background: url(images/bg-intro-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50vw 0vh;
+  position: relative;
+  z-index: -10;
+}
+
+.hero-wrapper {
+  max-width: 76rem;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -415,14 +428,12 @@ footer ul {
 }
 
 .hero-img-holder {
-  background: url(images/bg-intro-desktop.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: none;
   order: 2;
 }
 
 .hero-img {
-  transform: translateX(4rem);
+  transform: translateX(8rem);
 }
 
 .easybank-options-wrapper {
@@ -452,9 +463,15 @@ footer ul {
 .footer-outer-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
   max-width: 76rem;
+}
+
+.footer-menu-wrapper {
+  display: flex;
+  flex: 0 1 25rem;
+  gap: 6rem;
 }
 
 .footer-menu {
