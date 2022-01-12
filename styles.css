@@ -262,6 +262,12 @@ header {
   color: var(--clr-primary-blue);
   font-size: 1.1rem;
   font-weight: 300;
+  transition: all .2s ease;
+  padding-bottom: .5rem;
+}
+
+.article-title:hover {
+  color: var(--clr-primary-lime);
 }
 
 .article-text {
