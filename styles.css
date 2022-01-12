@@ -70,7 +70,14 @@ header {
 
 .header-menu {
   display: flex;
-  flex-direction; column;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: .9rem;
+}
+
+.header-menu li a {
+  color: var(--clr-gray-blue-300);
+  text-decoration: none;
 }
 
 .header-nav.active {
@@ -307,13 +314,23 @@ footer ul {
 
 /* HEADER */
 
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 70rem;
+}
+
 .hamburger-btn,
 .close-btn {
   display: none;
 }
 
 .header-nav {
-  display: block;
+  display: inline-block;
 }
 
 .header-menu {
@@ -322,7 +339,7 @@ footer ul {
 }
 
 .header-btn {
-  display: block;
+  display: inline-block;
 }
 
 .hero {
