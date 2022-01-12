@@ -53,12 +53,50 @@ body {
 
 /* HEADER */
 
+header {
+  display: flex;
+  align-items: center;
+  background: var(--clr-white);
+  box-shadow: 0 2px 15px 0px hsla(233, 8%, 62%, .25);
+  justify-content: space-between;
+  padding: 1.5rem;
+  position: fixed;
+  width: 100vw;
+}
+
+.header-nav {
+  display: none;
+}
+
+.header-btn {
+  display: none;
+}
+
+.hamburger-btn {
+  all: unset;
+}
+
+.close-btn {
+  all: unset;
+  display: none;
+}
+
+
 /* HERO */
+
+.hero-img-holder {
+  background: url(images/bg-intro-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  z-index: -100;
+}
 
 .hero-img {
   max-width: 100%;
   height: auto;
   display: block;
+  transform: translateY(-4rem);
 }
 
 .hero-body {
