@@ -51,6 +51,23 @@ body {
   opacity: .75;
 }
 
+.btn:focus {
+  /* Provide a fallback style for browsers
+     that don't support :focus-visible */
+  outline: 3px dotted var(--clr-primary-cyan);
+}
+
+.btn:focus:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+     that do s  upport :focus-visible */
+  outline: none;
+}
+
+.btn:focus-visible {
+  /* for browsers that do support :focus-visible */
+  outline: 3px dotted var(--clr-primary-cyan);
+}
+
 /* HEADER */
 
 header {
@@ -73,6 +90,24 @@ header {
   max-width: 90%;
 }
 
+.header-logo:focus {
+  /* Provide a fallback style for browsers
+     that don't support :focus-visible */
+  outline: 3px dotted var(--clr-primary-cyan);
+}
+
+.header-logo:focus:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+     that do s  upport :focus-visible */
+  outline: none;
+}
+
+.header-logo:focus-visible {
+  /* for browsers that do support :focus-visible */
+  outline: 3px dotted var(--clr-primary-cyan);
+}
+
+
 .header-nav {
   display: none;
 }
@@ -89,6 +124,24 @@ header {
   color: var(--clr-gray-blue-300);
   text-decoration: none;
 }
+
+.header-menu li a:focus {
+  /* Provide a fallback style for browsers
+     that don't support :focus-visible */
+  outline: 3px dotted var(--clr-primary-cyan);
+}
+
+.header-menu li a:focus:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+     that do s  upport :focus-visible */
+  outline: none;
+}
+
+.header-menu li a:focus-visible {
+  /* for browsers that do support :focus-visible */
+  outline: 3px dotted var(--clr-primary-cyan);
+}
+
 
 .header-nav.active {
   display: block;
@@ -229,6 +282,23 @@ header {
   opacity: .85;
 }
 
+.article-link:focus {
+  /* Provide a fallback style for browsers
+     that don't support :focus-visible */
+  outline: 3px dotted var(--clr-primary-cyan);
+}
+
+.article-link:focus:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+     that do s  upport :focus-visible */
+  outline: none;
+}
+
+.article-link:focus-visible {
+  /* for browsers that do support :focus-visible */
+  outline: 3px dotted var(--clr-primary-cyan);
+}
+
 .articles-title {
   color: var(--clr-primary-blue);
   font-size: 2rem;
@@ -304,6 +374,23 @@ footer ul {
   padding: 1.2rem 0;
 }
 
+.social-link:focus {
+  /* Provide a fallback style for browsers
+     that don't support :focus-visible */
+  outline: 3px dotted var(--clr-primary-cyan);
+}
+
+.social-link:focus:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+     that do s  upport :focus-visible */
+  outline: none;
+}
+
+.social-link:focus-visible {
+  /* for browsers that do support :focus-visible */
+  outline: 3px dotted var(--clr-primary-cyan);
+}
+
 .social-link i{
   color: var(--clr-white);
   font-size: 1.5rem;
@@ -331,6 +418,23 @@ footer ul {
 
 .footer-menu li a:hover {
   color: var(--clr-primary-lime);
+}
+
+.footer-menu li a:focus {
+  /* Provide a fallback style for browsers
+     that don't support :focus-visible */
+  outline: 3px dotted var(--clr-primary-cyan);
+}
+
+.footer-menu li a:focus:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+     that do s  upport :focus-visible */
+  outline: none;
+}
+
+.footer-menu li a:focus-visible {
+  /* for browsers that do support :focus-visible */
+  outline: 3px dotted var(--clr-primary-cyan);
 }
 
 .footer-btn {
