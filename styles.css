@@ -141,15 +141,17 @@ header {
 
 .hero-title {
   color: var(--clr-primary-blue);
-  font-size: 2.5rem;
+  font-size: clamp(2.5rem,4vw,3.5rem);
   font-weight: 300;
+  max-width: 30rem;
 }
 
 .hero-text {
   color: var(--clr-gray-blue-300);
   line-height: 1.7;
-  font-size: .95rem;
+  font-size: clamp(.95rem,2.5vw,1.1rem);
   padding-top: 1.2rem;
+  max-width: 30rem;
 }
 
 .hero-btn {
@@ -159,6 +161,7 @@ header {
 /* EASYBANK OPTIONS */
 
 .easybank-options {
+  background: var(--clr-gray);
   color: var(--clr-gray-blue-300);
   text-align: center;
   padding: 8.5rem 1.5rem 5rem 1.5rem;
@@ -166,14 +169,16 @@ header {
 
 .easybank-options-title {
   color: var(--clr-primary-blue);
-  font-size: 2rem;
+  font-size: clamp(2rem,4vw,2.4rem);
   font-weight: 300;
   padding-bottom: 1rem;
 }
 
 .easybank-options-text {
   padding-bottom: 3.5rem;
+  max-width:  42rem;
 }
+
 
 .option {
   padding-bottom: 2rem;
@@ -185,20 +190,26 @@ header {
 
 .option-title {
   color: var(--clr-primary-blue);
+  font-size: clamp(1rem, 3vw, 1.5rem);
   font-weight: 300;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 }
 
-.easybank-options-text,
+.easybank-options-text {
+  font-size: clamp(.95rem, 3vw, 1.1rem);
+  line-height: 1.6;
+}
+
 .option-text {
-  font-size: .95rem;
+  font-size: clamp(.95rem, 3vw, 1rem);
   line-height: 1.6;
 }
 
 /* ARTICLES */
 
 .articles {
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 5rem 1.5rem;
+  background: var(--clr-gray);
 }
 
 .articles-wrapper {
@@ -302,6 +313,7 @@ footer ul {
 .footer-menu {
   flex-direction: column;
   font-weight: 300;
+  padding-bottom: 1.2rem;
 }
 
 .footer-menu li a,
@@ -394,6 +406,7 @@ footer ul {
 .hero {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .hero-body {
@@ -403,14 +416,19 @@ footer ul {
 
 .hero-img-holder {
   background: url(images/bg-intro-desktop.svg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   order: 2;
 }
 
-.easybank-options {
+.hero-img {
+  transform: translateX(4rem);
+}
+
+.easybank-options-wrapper {
   margin: 0 auto;
-  max-width: 90rem;
+  width: 100%;
+  max-width: 76rem;
   text-align: left;
 }
 
@@ -419,11 +437,15 @@ footer ul {
   gap: 1.5rem;
 }
 
+.options-wrapper > * {
+  width: 100%;
+}
 
 .articles-wrapper {
   flex-direction: row;
+  margin: 0 auto;
+  max-width: 76rem;
 }
-
 
 /* FOOTER */
 
@@ -433,7 +455,6 @@ footer ul {
   justify-content: space-between;
   width: 100%;
   max-width: 76rem;
-  border: 2px solid red;
 }
 
 .footer-menu {
