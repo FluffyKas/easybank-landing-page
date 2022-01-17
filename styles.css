@@ -93,6 +93,7 @@ header {
   padding: 1.3rem;
   position: fixed;
   width: 100vw;
+  z-index: 10;
 }
 
 .nav-skip {
@@ -583,8 +584,7 @@ footer ul {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50vw 0vh;
-  position: relative;
-  z-index: -10;
+  padding: 16rem 0 10rem 0;
 }
 
 .hero-wrapper {
@@ -600,13 +600,15 @@ footer ul {
   text-align: left;
 }
 
-.hero-img-holder {
+/* .hero-img-holder {
   background: none;
   order: 2;
-}
+} */
 
 .hero-img {
-  transform: translateX(8rem);
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
 }
 
 /* ARTICLES */
