@@ -213,26 +213,25 @@ header {
   display: block;
 }
 
-/* HERO */
+/* HERO SECTION*/
 
-.hero-img-holder {
+.hero {
   background: url(images/bg-intro-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  position: relative;
-  z-index: -100;
+  padding: 0 1rem;
 }
 
 .hero-img {
   max-width: 100%;
   height: auto;
   display: block;
-  transform: translateY(-4rem);
+  transform: translateY(-3.5rem);
 }
 
 .hero-body {
   text-align: center;
-  padding: 0 1rem;
+  padding: 0 .5rem;
 }
 
 .hero-title {
@@ -251,7 +250,7 @@ header {
 }
 
 .hero-btn {
-  margin: 1.5rem auto;
+  margin: 1.8rem auto;
 }
 
 /* EASYBANK OPTIONS */
@@ -260,7 +259,7 @@ header {
   background: var(--clr-gray);
   color: var(--clr-gray-blue-300);
   text-align: center;
-  padding: 8.5rem 1.5rem 5rem 1.5rem;
+  padding: 8rem 1.5rem 5rem 1.5rem;
 }
 
 .easybank-options-title {
@@ -599,11 +598,6 @@ footer ul {
   order: 1;
   text-align: left;
 }
-
-/* .hero-img-holder {
-  background: none;
-  order: 2;
-} */
 
 .hero-img {
   position: absolute;
