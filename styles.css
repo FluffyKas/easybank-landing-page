@@ -657,7 +657,7 @@ footer ul {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50vw 0vh;
-  padding: 16rem 0 10rem 0;
+  padding: 16rem 0 10rem 1rem;
 }
 
 .hero-wrapper {
@@ -668,6 +668,7 @@ footer ul {
 .hero-body {
   text-align: left;
   margin: 0;
+  max-width: 29rem;
 }
 
 .hero-img {
