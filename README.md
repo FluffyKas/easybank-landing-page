@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](screenshots/easybank-page-desktop.png)
 
 ### Links
 
@@ -42,8 +42,6 @@ Users should be able to:
 - Mobile-first workflow
 
 ### What I learned
-
-![](screenshots/easybank-page-desktop.png)
 
 ### Continued development
 
