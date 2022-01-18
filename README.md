@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- [Live site](https://fluffykas.github.io/easybank-landing-page/)
 
 ## My process
 
@@ -43,7 +43,7 @@ Users should be able to:
 
 ### What I learned
 
-![](./screenshots/easybank-page-desktop.png)
+![](screenshots/easybank-page-desktop.png)
 
 ### Continued development
 
