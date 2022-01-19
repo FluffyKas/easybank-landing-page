@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- [Live site](https://fluffykas.github.io/easybank-landing-page/)
+- [Live site](https://easybank-page-vanilla.netlify.app/)
 
 ## My process
 
