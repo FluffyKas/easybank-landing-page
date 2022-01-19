@@ -43,6 +43,12 @@ Users should be able to:
 
 ### What I learned
 
+*Easybank logo - using SVG*
+
+I usually wrap my SVGs in an <img> tag. In this challenge however, Easybank logo was coloured differently in the header and footer sections so I had to go with using an inline SVG which allowed me to make the necessary changes. Apart from being a bit hard on the eyes, an inline SVG comes with a few accessibility issues, I found (like not having an alternative text description, which you may not even be warned of, since its not an <img> but an <svg>). I followed CSS-Trick's article on the topic (link in resources) and added a role="img" and an aria-labelledby that points to the title and description that provides an alternative text. I suppose, this wasn't hugely important in a case of a logo (perhaps I could've just hidden it, as there was another logo in the header already), but it was a good opportunity to learn about accessible SVGs. ^^
+
+
+
 ### Continued development
 
 ### Useful resources
