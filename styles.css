@@ -117,8 +117,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   margin: 0 auto;
+  width: 100%;
   max-width: 90%;
 }
 
@@ -137,11 +137,6 @@ header {
 .header-logo:focus-visible {
   /* for browsers that do support :focus-visible */
   outline: 3px dotted var(--clr-primary-cyan);
-}
-
-
-.header-nav {
-  display: none;
 }
 
 .header-menu {
@@ -174,20 +169,23 @@ header {
   outline: 3px dotted var(--clr-primary-cyan);
 }
 
+.header-nav {
+  display: none;
+}
 
 .header-nav.active {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 8px 20px 0px hsla(233, 26%, 24%, 0.4);
   display: block;
-  left: 50%;
-  transform: translateX(-50%);
   width: 80%;
   max-width: 400px;
-  text-align: center;
   padding: 1.5rem 0;
-  border-radius: 5px;
   position: absolute;
-  background: white;
   top: 5.5rem;
-  box-shadow: 0px 10px 20px 0px hsla(233, 26%, 24%, 0.5);
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
 
 .header-btn {
@@ -232,18 +230,18 @@ header {
 }
 
 .hero-img {
-  max-width: 100%;
-  height: auto;
   display: block;
-  transform: translateY(-3.5rem);
+  height: auto;
   margin: 0 auto;
+  max-width: 100%;
+  transform: translateY(-3.5rem);
 }
 
 .hero-body {
-  text-align: center;
-  padding: 0 .5rem;
   margin: 0 auto;
   max-width: 30rem;
+  padding: 0 .5rem;
+  text-align: center;
 }
 
 .hero-title {
@@ -268,8 +266,8 @@ header {
 .easybank-options {
   background: var(--clr-gray-blue-100);
   color: var(--clr-gray-blue-300);
-  text-align: center;
   padding: 8rem 1.5rem 5rem 1.5rem;
+  text-align: center;
 }
 
 .easybank-options-title {
@@ -280,9 +278,9 @@ header {
 }
 
 .easybank-options-text {
-  padding-bottom: 3.5rem;
-  max-width: 42rem;
   margin: 0 auto;
+  max-width: 42rem;
+  padding-bottom: 3.5rem;
 }
 
 .options-wrapper {
@@ -290,15 +288,14 @@ header {
   flex-wrap: wrap;
 }
 
-
 .option {
-  padding-bottom: 2rem;
-  max-width: 28rem;
   margin: 0 auto;
+  max-width: 24rem;
+  padding-bottom: 2rem;
 }
 
 .option img {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .option-title {
@@ -318,23 +315,30 @@ header {
   line-height: 1.6;
 }
 
-/* ARTICLES */
+/* ARTICLES SECTION */
 
 .articles {
-  padding: 0 1.5rem 5rem 1.5rem;
   background: var(--clr-gray);
+  padding: 0 1.5rem 5rem 1.5rem;
+}
+
+.articles-title {
+  color: var(--clr-primary-blue);
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 5rem 0 2rem 0;
+  text-align: center;
 }
 
 .articles-wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 1.85rem;
 }
 
 .article-link,
 .article-link:active {
-  text-decoration: none;
   opacity: 1;
+  text-decoration: none;
   transition: all .2s ease;
 }
 
@@ -359,19 +363,11 @@ header {
   outline: 3px dotted var(--clr-primary-cyan);
 }
 
-.articles-title {
-  color: var(--clr-primary-blue);
-  font-size: 2rem;
-  font-weight: 300;
-  padding: 2rem 0;
-  text-align: center;
-}
-
 .article-wrapper {
   background: var(--clr-white);
-  border-radius: 5px;
-  max-width: 32rem;
+  border-radius: 5px; 
   margin: 0 auto;
+  max-width: 32rem;
 }
 
 .article-illustration {
@@ -394,8 +390,8 @@ header {
   color: var(--clr-primary-blue);
   font-size: 1.1rem;
   font-weight: 300;
-  transition: all .2s ease;
   padding-bottom: .5rem;
+  transition: all .2s ease;
 }
 
 .article-title:hover {
@@ -406,6 +402,7 @@ header {
   color: var(--clr-gray-blue-300);
   font-size: .85rem;
 }
+
 
 /* FOOTER SECTION */
 
@@ -512,21 +509,15 @@ footer ul {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 45rem) {
+@media (min-width: 40rem) {
 
-  .options-wrapper {
-    gap: 1.5rem;
-  }
-
-  .options-wrapper>* {
-    width: 100%;
+  .articles-wrapper {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 
 @media (min-width: 50rem) {
-
-  /* HEADER */
 
   .header-wrapper {
     display: flex;
@@ -589,28 +580,7 @@ footer ul {
 
 }
 
-@media (min-width: 64rem) {
-
-  /* ARTICLES */
-
-  .articles-wrapper {
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 76rem;
-  }
-
-  .article-illustration {
-    height: 11.5rem;
-    width: 17.25rem;
-  }
-
-}
-
 @media (min-width: 68rem) {
-
-  /* HERO */
 
   .hero {
     background: url(images/bg-intro-desktop.svg);
@@ -642,12 +612,10 @@ footer ul {
 
   .hero-img {
     position: relative;
-    top: -8rem;
+    top: -11rem;
     right: -20%;
     z-index: 5; 
   }
-
-    /* EASYBANK OPTIONS */
   
     .easybank-options-wrapper {
       margin: 0 auto;
@@ -664,7 +632,27 @@ footer ul {
       flex-wrap: nowrap;
     }
 
-    /* FOOTER */
+    .options-wrapper {
+      gap: 1.5rem;
+    }
+  
+    .options-wrapper > * {
+      width: 100%;
+    }
+
+    .articles-title {
+      text-align: left;
+      max-width: 76rem;
+      margin: 0 auto;
+    }
+
+    .articles-wrapper {
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 76rem;
+    }
 
     .footer-outer-wrapper {
       display: flex;
@@ -694,15 +682,14 @@ footer ul {
     }
   
     .footer-menu {
-      text-align: left;
       padding-bottom: 0;
+      text-align: left;
     }
   
     .footer-wrapper-right {
       flex-direction: column;
-      justify-content: space-between;
       align-items: flex-end;
-  
+      justify-content: space-between;
     }
 
 }
