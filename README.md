@@ -2,6 +2,8 @@
 
 This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
+An easy-ish challenge at first glance but I had a lot more trouble with it than I initially thought. Apart from having some accessibility concerns (markup for article links, svgs), it has a pretty complicated layout (with the overlapping image in the hero section, for example). It was a real challenge to make it look good on all screen sizes.
+
 ## Table of contents
 
 - [Overview](#overview)
