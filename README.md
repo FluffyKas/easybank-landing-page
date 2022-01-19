@@ -61,6 +61,7 @@ Few weeks ago I came across Kevin Powell's video (link in resources) on hidden S
 
 - [CSS-Tricks: Accessible SVGs](https://css-tricks.com/accessible-svgs/) 
 - [Kevin Powell's video on skip navigation button](https://www.youtube.com/watch?v=jDDaOFr9nqQ) 
+- [Scott O'Hara: Accessibility of the section element](https://www.scottohara.me/blog/2021/07/16/section.html) - not strictly related to this project but I found it interesting, so I'll leave a link here
 
 ## Author
 
