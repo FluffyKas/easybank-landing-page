@@ -560,7 +560,7 @@ footer ul {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 3.2rem;
+    top: 2.9rem;
     background: linear-gradient(120deg, hsl(136, 65%, 51%) 0%, hsl(192, 70%, 51%) 88%);
     width: 0;
     height: 4px;
@@ -634,7 +634,7 @@ footer ul {
 
   .hero-img {
     position: relative;
-    top: -11rem;
+    top: -8rem;
     right: -20%;
     z-index: 5; 
   }
