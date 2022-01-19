@@ -196,21 +196,30 @@ header {
 
 .hamburger-btn {
   all: unset;
+  background-color: transparent;
   cursor: pointer;
 }
 
-.hamburger-btn.opened {
-  display: none;
-}
-
-.close-btn {
-  all: unset;
-  display: none;
-  cursor: pointer;
-}
-
-.close-btn.active {
+.hamburger-btn span {
+  background-color: var(--clr-primary-blue);
   display: block;
+  height: 2px;
+  width: 25px;
+  margin-bottom: 5px;
+  transform-origin: 7.6px 1px;
+  transition: all .4s ease-out;
+}
+
+.hamburger-btn.active span:nth-child(1) {
+	transform: rotate(45deg);
+}
+
+.hamburger-btn.active span:nth-child(2) {
+	display: none;
+}
+
+.hamburger-btn.active span:nth-child(3) {
+	transform: rotate(-45deg);
 }
 
 /* HERO SECTION*/
@@ -536,8 +545,7 @@ footer ul {
     opacity: .85;
   }
 
-  .hamburger-btn,
-  .close-btn {
+  .hamburger-btn {
     display: none;
   }
 
