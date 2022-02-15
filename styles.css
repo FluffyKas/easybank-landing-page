@@ -227,6 +227,7 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   padding: 0 1rem;
+  overflow-x: clip;
 }
 
 .hero-img {
