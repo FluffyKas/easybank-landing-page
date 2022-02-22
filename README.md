@@ -16,6 +16,7 @@ An easy-ish challenge at first glance but I had a lot more trouble with it than 
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -66,3 +67,7 @@ Few weeks ago I came across Kevin Powell's video (link in resources) on hidden S
 ## Author
 
 - Frontend Mentor - [@FluffyKas](https://www.frontendmentor.io/profile/FluffyKas)
+
+## Acknowledgements
+
+Lots of thanks to @abedfetrat from Frontend Mentor for giving me a tip about overflow-x: clip which I used to solve the problems with the hero section layout!
