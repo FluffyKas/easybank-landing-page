@@ -58,6 +58,8 @@ Few weeks ago I came across Kevin Powell's video (link in resources) on hidden S
 
 ### Continued development
 
+The mobile menu still feels a bit wonky so a bit of work needed on that in the future.
+
 ### Useful resources
 
 - [CSS-Tricks: Accessible SVGs](https://css-tricks.com/accessible-svgs/) 
