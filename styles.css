@@ -693,6 +693,16 @@ footer ul {
       max-width: 76rem;
     }
 
+    .article-link {
+      transform: scale(1);
+      transition: all .2s ease-in;
+    }
+
+    .article-link:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+
     .footer-outer-wrapper {
       display: flex;
       flex-direction: row;
