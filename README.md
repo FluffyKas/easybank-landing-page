@@ -58,7 +58,7 @@ Few weeks ago I came across Kevin Powell's video (link in resources) on hidden S
 
 _Intersection observer, animations_
 
-I added some subtle fade in animations with css keyframes and intersection observer which I used for the first time.
+I added some subtle fade in animations with css keyframes and intersection observer.
 
 ### Continued development
 
