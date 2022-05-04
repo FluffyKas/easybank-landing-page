@@ -18,7 +18,7 @@ const observer = new IntersectionObserver(entries => {
     if (entry.isIntersecting) observer.unobserve(entry.target)
   })
 }, {
-  threshold: .35
+  threshold: .45
 })
 
 observedElements.forEach(element => {
